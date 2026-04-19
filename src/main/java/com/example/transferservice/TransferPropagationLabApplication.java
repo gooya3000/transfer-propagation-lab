@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TransferServiceApplication {
+public class TransferPropagationLabApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(TransferServiceApplication.class, args);
+        SpringApplication.run(TransferPropagationLabApplication.class, args);
     }
 
 }
