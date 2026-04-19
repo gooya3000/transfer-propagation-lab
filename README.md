@@ -4,13 +4,6 @@
 
 단순히 `@Transactional` 예제를 나열하는 것이 아니라, “이체 성공/실패”, “멱등성”, “감사 로그”, “후처리”처럼 실제 서비스에서 만날 수 있는 경계를 기준으로 전파 속성을 배치한다.
 
-## 프로젝트명
-현재 추천 프로젝트명은 `transfer-propagation-lab`이다.
-
-- `transfer-service`: 일반 계좌이체 서비스처럼 보여 학습 목적이 잘 드러나지 않는다.
-- `transaction-propagation-lab`: 학습 목적은 선명하지만 이체 도메인이 드러나지 않는다.
-- `transfer-propagation-lab`: 계좌이체 도메인과 트랜잭션 전파 학습 목적이 모두 드러난다.
-
 ## 학습 목표
 - `REQUIRED`, `REQUIRES_NEW`, `MANDATORY`, `NOT_SUPPORTED`를 실제 이체 흐름에 맞게 배치한다.
 - 이체 실행 트랜잭션이 실패했을 때 잔액 변경과 거래내역은 롤백한다.
